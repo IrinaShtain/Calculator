@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="forgoen_password">Forgotten Password?</string>
+    <string name="button_send">SEND</string>
+    <string name="button_login_FB">Login with Facebook</string>
+    <string name="button_login_Twitter">Login with Twitter</string>
+    <string name="button_login_Google">Login with Google</string>
+    <string name="registration">Registration</string>
+    <string name="recover_password_text">Please, enter your email to recover password</string>
+    <string name="registration_form">To book your course please fill in registration form</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="children">Children</string>
+    <string name="date_of_birthday">Date of Birth</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="children_more">More kids can be added</string>
+
+</resources>
