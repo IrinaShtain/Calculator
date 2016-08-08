@@ -17,5 +17,12 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="children_more">More kids can be added</string>
+    <string name="tab1_palindrome">Palindrome</string>
+    <string name="tab2_factorial">Factorial</string>
+    <string name="tab3_pairs">Pairs</string>
+    <string name="text">Enter the number</string>
+    <string name="calculate">Calculate</string>
+    <string name="text_pairs">Enter the pairs (Example: 12 34 45 32 12 45 32 4</string>
+
 
 </resources>

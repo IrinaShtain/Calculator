@@ -23,11 +23,11 @@
             android:textSize="45sp" />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_blue"
             android:drawableLeft="@mipmap/ic_account_outline"
             android:ems="10"
             android:inputType="textPersonName"
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_blue"
             android:drawableLeft="@mipmap/ic_lock_outline"
             android:ems="10"
             android:inputType="textPassword"
@@ -47,12 +47,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/forgotenPassword"
             android:layout_marginTop="25dp"
             android:gravity="right"
             android:text="@string/forgoen_password"
             android:textColor="@android:color/white"
             android:textSize="15sp" />
         <Button
+            android:id="@+id/btSend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
@@ -67,6 +69,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/loginFB"
                 android:background="@color/colorPrimary"
                 android:text="@string/button_login_FB"
                 android:textSize="15sp"
@@ -80,6 +83,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/loginGoogle"
                 android:background="@color/colorPrimary"
                 android:text="@string/button_login_Google"
                 android:textSize="15sp"
@@ -93,6 +97,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/loginTwitter"
                 android:background="@color/colorPrimary"
                 android:text="@string/button_login_Twitter"
                 android:textSize="15sp"
