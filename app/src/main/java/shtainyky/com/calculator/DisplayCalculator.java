@@ -25,7 +25,6 @@ public class DisplayCalculator extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
         toolbar.setTitleTextColor(Color.WHITE);
-
     }
 
     private void initTabs() {

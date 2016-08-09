@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<ScrollView
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimary"
-    android:orientation="vertical">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/activity_right_left_margin"
-        android:layout_marginRight="@dimen/activity_right_left_margin"
-        android:layout_marginTop="45dp"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
@@ -72,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:gravity="left"
+            android:gravity="start"
             android:text="@string/children"
             android:textColor="@color/colorWhite"
             android:textSize="15sp" />
@@ -99,7 +97,7 @@
             android:hint="@string/date_of_birthday"
             android:textColorHint="@color/colorWhite"/>
         <EditText
-            android:id="@+id/login_res"
+            android:id="@+id/login_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -110,7 +108,7 @@
             android:hint="@string/login"
             android:textColorHint="@color/colorWhite"/>
         <EditText
-            android:id="@+id/password_res"
+            android:id="@+id/password_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -131,12 +129,13 @@
                 android:clickable="true"
                 app:layout_anchorGravity="bottom|right|top"
                 android:background="@color/colorAccent"
-                android:src="@mipmap/ic_plus" />
+                android:src="@mipmap/ic_plus"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:gravity="left"
+                android:gravity="start"
                 android:text="@string/children_more"
                 android:textColor="@color/colorWhite"
                 android:textSize="20sp" />
@@ -144,10 +143,11 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/btSend_reg"
             android:background="@color/colorAccent"
             android:text="@string/button_send"
             android:layout_marginTop="5dp"
             android:textColor="@color/colorWhite"/>
 
     </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</ScrollView>

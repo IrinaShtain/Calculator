@@ -3,16 +3,21 @@ package shtainyky.com.calculator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import shtainyky.com.calculator.Users.DatabaseHelper;
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
-    EditText login, password;
-    TextView forgottenPass, registration;
-    Button btSend, loginFB, loginTwitter, loginGoogle;
+    private EditText login, password;
+    private TextView forgottenPass, registration;
+    private Button btSend, loginFB, loginTwitter, loginGoogle;
+    private DatabaseHelper helper = new DatabaseHelper(this);
 
 
     @Override
@@ -28,8 +33,19 @@ public class MainActivity extends Activity implements View.OnClickListener{
         switch (view.getId())
         {
             case R.id.btSend:
-                intent = new Intent(MainActivity.this, DisplayCalculator.class);
-                startActivity(intent);
+                String strLogin = login.getText().toString();
+                String strPassword = password.getText().toString();
+
+                if (TextUtils.isEmpty(strLogin) || TextUtils.isEmpty(strPassword))
+                    return;
+
+                String dbPassword = helper.searchPassword(strLogin);
+                if (dbPassword.equals(strPassword)) {
+                    intent = new Intent(MainActivity.this, DisplayCalculator.class);
+                    startActivity(intent);
+                }
+                else
+                    Toast.makeText(getApplicationContext(), "Login and password don't match!", Toast.LENGTH_LONG).show();
                 break;
             case R.id.loginFB:
                 break;
