@@ -14,7 +14,7 @@
     <string name="phone">Phone</string>
     <string name="children">CHILDREN</string>
     <string name="date_of_birthday">Date of Birth</string>
-    <string name="login">Login</string>
+    <string name="login">Your login</string>
     <string name="password">Password</string>
     <string name="children_more">More kids can be added</string>
     <string name="tab1_palindrome">Palindrome</string>
@@ -23,6 +23,7 @@
     <string name="text">Enter the number</string>
     <string name="calculate">Calculate</string>
     <string name="text_pairs">Enter the pairs (Example: 12 34 45 32 12 45 32 4</string>
+    <string name="children_next">Next child</string>
 
 
 </resources>

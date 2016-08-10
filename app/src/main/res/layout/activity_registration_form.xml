@@ -85,6 +85,8 @@
             android:textColor="@color/colorWhite"
             android:hint="@string/first_name"
             android:textColorHint="@color/colorWhite"/>
+
+
         <EditText
             android:id="@+id/child_birthday"
             android:layout_width="match_parent"
@@ -96,11 +98,16 @@
             android:textColor="@color/colorWhite"
             android:hint="@string/date_of_birthday"
             android:textColorHint="@color/colorWhite"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
         <EditText
             android:id="@+id/login_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_blue"
             android:drawableLeft="@mipmap/ic_account_outline"
             android:inputType="textPersonName"
@@ -118,6 +125,7 @@
             android:textColor="@color/colorWhite"
             android:hint="@string/password"
             android:textColorHint="@color/colorWhite"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,6 +138,7 @@
                 app:layout_anchorGravity="bottom|right|top"
                 android:background="@color/colorAccent"
                 android:src="@mipmap/ic_plus"
+                android:onClick="onFabClick"
                 />
             <TextView
                 android:layout_width="match_parent"
