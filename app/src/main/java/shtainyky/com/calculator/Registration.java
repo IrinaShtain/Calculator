@@ -15,9 +15,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import shtainyky.com.calculator.Users.ChildFragment;
-import shtainyky.com.calculator.Users.DatabaseHelper;
-import shtainyky.com.calculator.Users.User;
+import shtainyky.com.calculator.users.ChildFragment;
+import shtainyky.com.calculator.users.DatabaseHelper;
+import shtainyky.com.calculator.users.User;
 
 public class Registration extends Activity implements View.OnClickListener {
     private EditText first_name, last_name, email, phone, child_first_name, child_birthday, login_reg, password_reg;
@@ -56,19 +56,24 @@ public class Registration extends Activity implements View.OnClickListener {
                 children = children + name + " " + bday + " ";
             }
         }
-        //init user
-        User user = new User();
-        user.setFirst_name(string(first_name));
-        user.setLast_name(string(last_name));
-        user.setEmail(string(email));
-        user.setPhone(string(phone));
-        user.setChildren(children);
-        user.setLogin(string(login_reg));
-        user.setPassword(string(password_reg));
-        helper.insertUser(user);
-        Toast.makeText(getApplicationContext(), "Please enter your login and password!", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(Registration.this, MainActivity.class);
-        startActivity(intent);
+        if (helper.isUniqulogin(string(login_reg)))
+        {
+            //init user
+            User user = new User();
+            user.setFirst_name(string(first_name));
+            user.setLast_name(string(last_name));
+            user.setEmail(string(email));
+            user.setPhone(string(phone));
+            user.setChildren(children);
+            user.setLogin(string(login_reg));
+            user.setPassword(string(password_reg));
+            helper.insertUser(user);
+            Toast.makeText(getApplicationContext(), "Please enter your login and password!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(Registration.this, MainActivity.class);
+            startActivity(intent);
+        }
+        else Toast.makeText(getApplicationContext(), "Please enter other login, because such login exists!", Toast.LENGTH_LONG).show();
+
     }
 
     @Override

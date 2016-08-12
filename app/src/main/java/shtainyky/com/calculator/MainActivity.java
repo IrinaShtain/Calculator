@@ -10,7 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import shtainyky.com.calculator.Users.DatabaseHelper;
+
+import shtainyky.com.calculator.users.DatabaseHelper;
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
@@ -20,12 +21,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private DatabaseHelper helper = new DatabaseHelper(this);
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_login);
         initViews();
     }
+
 
     @Override
     public void onClick(View view) {

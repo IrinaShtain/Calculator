@@ -1,4 +1,4 @@
-package shtainyky.com.calculator.Users;
+package shtainyky.com.calculator.users;
 
 public class User {
     private String first_name, last_name, email, children, login, password, phone;
