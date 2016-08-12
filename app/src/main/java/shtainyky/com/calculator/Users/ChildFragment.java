@@ -1,4 +1,4 @@
-package shtainyky.com.calculator.Users;
+package shtainyky.com.calculator.users;
 
 import android.app.Fragment;
 import android.os.Bundle;
