@@ -56,7 +56,7 @@ public class Registration extends Activity implements View.OnClickListener {
                 children = children + name + " " + bday + " ";
             }
         }
-        if (helper.isUniqulogin(string(login_reg)))
+        if (helper.isUniquelogin(string(login_reg)))
         {
             //init user
             User user = new User();
