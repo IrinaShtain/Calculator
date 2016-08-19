@@ -1,7 +1,12 @@
 package shtainyky.com.calculator.users;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 public class User {
     private String first_name, last_name, email, children, login, password, phone;
+
+
 
     public String getFirst_name() {
         return first_name;
@@ -58,4 +63,6 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
 }

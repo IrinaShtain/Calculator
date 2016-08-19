@@ -8,6 +8,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_key" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,9 +24,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecoveryPassword" />
+        <activity android:name=".mail.RecoveryPassword" />
         <activity android:name=".Registration" />
-        <activity android:name=".DisplayCalculator"></activity>
+        <activity android:name=".DisplayCalculator" />
+
+
+
+        <activity android:name=".integration.FB_Integration" />
+        <activity android:name=".integration.Google_Integration" />
+        <activity android:name=".integration.Twitter_Integration"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4eded15eae9732c35007afd7cd581679f05b9927" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

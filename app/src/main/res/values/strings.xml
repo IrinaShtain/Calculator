@@ -24,6 +24,13 @@
     <string name="calculate">Calculate</string>
     <string name="text_pairs">Enter the pairs (Example: 12 34 45 32 12 45 32 4</string>
     <string name="children_next">Next child</string>
+    <string name="twitter_app_key">u5EqqF8gMIXMewpkuYSw6eQcm</string>
+    <string name="twitter_app_secret">hFllwqZYUZ0guexJoy823LOjlCMfq8jjHddD9qnh7jZ9xF1V2Q</string>
+    <string name="facebook_app_key">1775469139334991</string>
+    <string name="facebook_app_secret">109c46e1af8c321524007a6dbf18ecf8</string>
+    <string name="google_app_key">886563764310-2p7mbl7tongcm0076qrlpavg6au40qg0.apps.googleusercontent.com</string>
+    <string name="google_app_secret">14g7wGeX2SZ_DhILkByCEFkl</string>
+    <string name="quit">Quit and logout</string>
 
 
 </resources>
